@@ -1,0 +1,13 @@
+<div class="sidebar bg-body-tertiary" [ngStyle]="{'width.px': sidebarWidth}">
+  <div class="sidebar-actions border-bottom">
+      <button  type="button" class="btn btn-primary btn-sm m-1">
+        <fa-icon [icon]="faPlus"></fa-icon>
+    </button>
+    <button  type="button" class="btn btn-primary btn-sm m-1">
+      <fa-icon [icon]="faRefresh"></fa-icon>
+    </button>
+  </div>
+  <app-folders></app-folders>
+  <div class="resizer" [class.active]="isResizing" (mousedown)="startResizing($event)"></div>
+</div>
+  

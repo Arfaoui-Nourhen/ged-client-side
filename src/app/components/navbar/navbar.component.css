@@ -1,0 +1,21 @@
+.container-fluid{
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    justify-content: space-between;  /* Distribute space between items */
+    flex-wrap: nowrap;  /* Prevent wrapping by default */
+    width: 100%;  /* Ensure it takes full width */
+    
+}
+
+.btn {
+    flex-shrink: 0;  /* Prevent shrinking */
+    margin-inline: 2px;
+}
+
+.navbar-search{
+    width: 30%;
+}
+.input-group input[type=text]{
+    font-size: small;
+}
+

@@ -1,0 +1,32 @@
+.sidebar {
+    height: 100vh; /* Full viewport height */
+    max-width: 28vw;
+    /* min-width: min-content; */
+    position: relative; /* Ensure the sidebar is fixed */
+    left: 0;
+    z-index: 1; /* Higher z-index to ensure sidebar is above other content */
+    overflow: hidden; /* Hide any content that overflows the sidebar's dimensions */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis; /* Show an ellipsis if the text overflows */
+  }
+  
+  .resizer {
+    width: 2px;
+    cursor: ew-resize;
+    background-color: #dee2e6;
+    height: 100vh;
+    position: absolute; /* Positioning relative to the nearest positioned ancestor (sidebar) */
+    right: 0; /* Stick to the right edge of the sidebar */
+    top: 0;
+    transition: background-color 0.2s ease-out, width 0.2s ease-out;
+  }
+
+  .resizer:hover,
+  .resizer.active {
+    width: 3px;
+    background-color: #555; /* Color changes when hovered */
+  }
+  
+  :host{
+    overflow-x: scroll;
+  }
